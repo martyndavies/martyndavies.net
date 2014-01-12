@@ -12,6 +12,7 @@ body {
 header {
   background-color: #0C5AA6;
   height: 300px;
+  text-align: center;
 }
 
 .section-1 {
@@ -20,8 +21,6 @@ header {
   padding-top: 50px;
 }
 
-
-
 .section-2 {
   height: 600px;
   background-color: #04396C;
@@ -29,13 +28,57 @@ header {
 
 .box {
   background-color: #04396C;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
-  width: 300px;
   margin-right: 20px;
+  width: 450px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
+}
+
+/* Lists */
+
+.main-list {
+  list-style: none;
+  margin-left: -35px;
+}
+
+.main-list li {
+  margin-bottom: 10px;
+  line-height: 16px;
+  padding-left: 25px;
+}
+
+.main-list a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Courier New', sans-serif;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  letter-spacing: -2px;
+}
+
+.main-list .video {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAByklEQVQ4T6WTvU8CQRDFZ+9LYgTRCnI0VNAQE0zQipjQiI1YmBgbC2sb/wULvxKMlFRaWNhpZ4OVhQk2hIqGhAaRmBjFCMpx59tdLnLR2HDh8Xbndn47O3fHaMyLjZlP4wMymYzTaDTINM1/i3Ech0bVbDYpHo8T44B+v09bpzdECn4MRcGZykgMuWPuAA+GcBsqrC9SKBSSgE6nQxv5WwlQJMBN5CCFAxHnMQHAXyE3R9FoVALa7Tblju9+ksRimSQAw7HKq8F4gNKOlkxKpVISUKlUaOWkRj6D0QSkaXI3XjrBbRTlIMmCf/JOAVxcmqJsNisBpVKJFg4eRaKq/0AYnwOgwjXEhQ/H58sBL2B+ryma5i7iIAEcJoyOeexyLfgb4D7Hv0BudS7oanPWC9g+eyYdDRq93MfIj8F7ouK+bCSjw5VpLyCZTJKu6x6Az+fDsRh1u11P3LZtKpfLEpBOp/cfW62QqmlcM5qmTauKGoD7DcPwK3gJer3eu2VZbwN78AZ/HVjWC9QyI5Gnv76FSWy3COWgneHWRfgF9AB9eI45MuFJuyh5NRwOG7FYjBKJBAWDQarX61StVqlWq32hmmusy0P3PPcb9Oae4Yw+N2sAAAAASUVORK5CYII=') 0 -1px transparent;
+  background-repeat: no-repeat;
+}
+
+.main-list .writing {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABb0lEQVQ4T2NkoBAwwvRXVFT0MDIyqgLxeaCYxb9//64wMTEFANlH////bwcUPwSigfzS9vb2NTB9YAPaOpv9vnz8vrG1tZWhurqagRDNw8/pX1VeuwmkF2xAR1fr/08fvjL4+/szbNy4kSDNJ8DNUFFWDdYLN6C8tApsu5OTE8O+ffsY7OzsGA4dOoRBg1zX2d2G3YC3b98SDFJhYWGG87GQoPv/nwHCAnkB5IKzZ88SNIBpggmDegUDA/ttO4ZLaw+heoGQCx4ViMA1/zx1iOHmY7QwwOcCZJthmv/8ZahH8QIuF2Cz+R8DQ53JEoYWgmGAzebLsqEM8e2rmTCiEZsLQLbrBdsxwJyt3nSGYfKanbBoZMTrApDtRksYGLLDzRiSWU8x/ItczGDsFQNLByxAF/zFGwYiIiIM52IYGCSK9zCwyRqAoxiUDnAmJIKJAKoAagAzkPsP7IL2zpZlwNwWSawBwFy5vLK8JgqkHgBQDemLvc711QAAAABJRU5ErkJggg==') 0 -3px transparent;
+  background-repeat: no-repeat;
+}
+
+.main-list .sendgrid {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozRTUyNDg4MzUxRDUxMUUyOTVEOTgxNEFGNzA4MEMyNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozRTUyNDg4NDUxRDUxMUUyOTVEOTgxNEFGNzA4MEMyNCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNFNTI0ODgxNTFENTExRTI5NUQ5ODE0QUY3MDgwQzI0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNFNTI0ODgyNTFENTExRTI5NUQ5ODE0QUY3MDgwQzI0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+BVe84wAAAXRJREFUeNqkk0EohEEUgO1GlpaiSEmk3BxELuSmdXCTy0rYKDcRSltyc7ScHHdtHIQc7EHbXt1cyEG5oD0pxb8KKb/vbW+2aevfVTv19Wbmzbz35r03Ptd1qyoZvnIHQtFMA2IPpuAHNtPbo7tG7y9zuRGRgQjUQhCa2R/6lwHGKrQV7R1BP0YCJQ1wYA4xCytFqh5IwkIhBxwWL9MgoXXDE4yAw3u70F8yH7OMnMEVnFSjHGdyCgFVOvAOTWBKtAy3UKPrduiDnDxh37osWT6AYV3X4WCAKO6Z7+jeIfTCjFTHr55k5DSSFi1b3gBcY+QRWQ8JLWfQ3BEDUTgG8RKGZ9iCrPXmTvU6aSX+WxIpiwuYgEFVZAn5A7lkGXiFN3iAc9iQanAuZaoQ00TJWIMYyl/2U8wlyRHWCc9W1o67gw7df9HIbqS0XA579Uv+PRxwTGPoaIV57Y3FUq1a6ESMpBHr8AWfEJfg1Lj3b6z0O/8JMAAHrmos8V42ogAAAABJRU5ErkJggg==') 0 0 transparent;
+  background-repeat: no-repeat;
+}
+
+.main-list a:hover {
+  color: #FFD300;
 }
 
 /* Words and Fonts */
